@@ -13,7 +13,7 @@
     },
     "time": {
       "created": 1772692632696,
-      "updated": 1772693064557
+      "updated": 1772693076250
     }
   },
   "messages": [
@@ -730,7 +730,8 @@
       "info": {
         "role": "assistant",
         "time": {
-          "created": 1772693064466
+          "created": 1772693064466,
+          "completed": 1772693076174
         },
         "parentID": "msg_cbcbd8af6001ndTzhNgNmMmvW5",
         "modelID": "big-pickle",
@@ -743,15 +744,17 @@
         },
         "cost": 0,
         "tokens": {
-          "input": 0,
-          "output": 0,
+          "total": 13111,
+          "input": 78,
+          "output": 81,
           "reasoning": 0,
           "cache": {
-            "read": 0,
-            "write": 0
+            "read": 12839,
+            "write": 113
           }
         },
         "variant": "high",
+        "finish": "tool-calls",
         "id": "msg_cbcbd8b12001F3cmm7WvFTSzRM",
         "sessionID": "ses_343490b87ffeXG4BqQymGWvlgW"
       },
@@ -784,22 +787,134 @@
           "callID": "call_function_0hptn4b69s4y_1",
           "tool": "bash",
           "state": {
-            "status": "running",
+            "status": "completed",
             "input": {
               "command": "git add .gitignore && git commit -m \"Add .gitignore file\"",
               "description": "Add and commit .gitignore file"
             },
+            "output": "[main 4e4066f] Add .gitignore file\n 1 file changed, 3 insertions(+)\n create mode 100644 .gitignore\n",
+            "title": "Add and commit .gitignore file",
             "metadata": {
-              "output": "",
-              "description": "Add and commit .gitignore file"
+              "output": "[main 4e4066f] Add .gitignore file\n 1 file changed, 3 insertions(+)\n create mode 100644 .gitignore\n",
+              "exit": 0,
+              "description": "Add and commit .gitignore file",
+              "truncated": false
             },
             "time": {
-              "start": 1772693072452
+              "start": 1772693072350,
+              "end": 1772693076121
             }
           },
           "id": "REDACTED",
           "sessionID": "ses_343490b87ffeXG4BqQymGWvlgW",
           "messageID": "msg_cbcbd8b12001F3cmm7WvFTSzRM"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "snapshot": "6b999ef58f35e3dee5dbfc05d58ceab9590802d6",
+          "cost": 0,
+          "tokens": {
+            "total": 13111,
+            "input": 78,
+            "output": 81,
+            "reasoning": 0,
+            "cache": {
+              "read": 12839,
+              "write": 113
+            }
+          },
+          "id": "prt_cbcbdb89c0018zG2oNCCMjfk8e",
+          "sessionID": "ses_343490b87ffeXG4BqQymGWvlgW",
+          "messageID": "msg_cbcbd8b12001F3cmm7WvFTSzRM"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1772693076182,
+          "completed": 1772693078942
+        },
+        "parentID": "msg_cbcbd8af6001ndTzhNgNmMmvW5",
+        "modelID": "big-pickle",
+        "providerID": "opencode",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/home/rajujonnada/text-to-speech-generator",
+          "root": "/home/rajujonnada/text-to-speech-generator"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 13188,
+          "input": 121,
+          "output": 29,
+          "reasoning": 0,
+          "cache": {
+            "read": 12958,
+            "write": 80
+          }
+        },
+        "variant": "high",
+        "finish": "stop",
+        "id": "msg_cbcbdb8d60011RL045iwl0VCNk",
+        "sessionID": "ses_343490b87ffeXG4BqQymGWvlgW"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "snapshot": "6b999ef58f35e3dee5dbfc05d58ceab9590802d6",
+          "id": "prt_cbcbdc08e001zX3Z5l2kMO07bo",
+          "sessionID": "ses_343490b87ffeXG4BqQymGWvlgW",
+          "messageID": "msg_cbcbdb8d60011RL045iwl0VCNk"
+        },
+        {
+          "type": "reasoning",
+          "text": "Done. The .gitignore file has been added and committed.",
+          "metadata": {
+            "anthropic": {
+              "signature": "2d97829ed7ed9b1edbc4ee000b683d9b0e4c24979440792bf3feb20dbd0f452f"
+            }
+          },
+          "time": {
+            "start": 1772693078160,
+            "end": 1772693078832
+          },
+          "id": "prt_cbcbdc09000104BUcMKlm9nQxE",
+          "sessionID": "ses_343490b87ffeXG4BqQymGWvlgW",
+          "messageID": "msg_cbcbdb8d60011RL045iwl0VCNk"
+        },
+        {
+          "type": "text",
+          "text": "Done. Committed `.gitignore` to the repository.",
+          "time": {
+            "start": 1772693078842,
+            "end": 1772693078842
+          },
+          "id": "prt_cbcbdc331001zSY4Lq5uOyhAR2",
+          "sessionID": "ses_343490b87ffeXG4BqQymGWvlgW",
+          "messageID": "msg_cbcbdb8d60011RL045iwl0VCNk"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "snapshot": "6b999ef58f35e3dee5dbfc05d58ceab9590802d6",
+          "cost": 0,
+          "tokens": {
+            "total": 13188,
+            "input": 121,
+            "output": 29,
+            "reasoning": 0,
+            "cache": {
+              "read": 12958,
+              "write": 80
+            }
+          },
+          "id": "prt_cbcbdc37a0014iWhgU10MbCagW",
+          "sessionID": "ses_343490b87ffeXG4BqQymGWvlgW",
+          "messageID": "msg_cbcbdb8d60011RL045iwl0VCNk"
         }
       ]
     }
