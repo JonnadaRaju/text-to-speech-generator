@@ -1,7 +1,7 @@
 venv/
 __pycache__/
 .env
-outputs/
+uploads/
 test_output.mp3
 .entire/
 .gemini/
