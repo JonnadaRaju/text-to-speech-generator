@@ -1,0 +1,9 @@
+Create README.md file and add title as Text To Speech Generator
+
+---
+
+create .gitignore file and add .entire, .gemini and .opencode files
+
+---
+
+git add and commit .gitignore file
