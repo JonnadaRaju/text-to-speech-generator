@@ -1,0 +1,171 @@
+Create README.md file and add title as Text To Speech Generator
+
+---
+
+create .gitignore file and add .entire, .gemini and .opencode files
+
+---
+
+git add and commit .gitignore file
+
+---
+
+You are an expert backend engineer and CLI tool developer.
+
+Follow a strict development workflow.
+
+Project:
+Build a system that converts uploaded Telugu text files into audio using the Sarvam AI Text-to-Speech API.
+
+API Documentation:
+https://docs.sarvam.ai/api-reference-docs/api-guides-tutorials/text-to-speech/overview
+
+Tech Stack:
+Python
+FastAPI
+Sarvam AI TTS API
+Typer CLI
+Requests
+python-dotenv
+
+=====================================================
+PHASE 1 — Backend Generation
+=====================================================
+
+Generate a FastAPI backend with the following capabilities:
+
+1. Upload text files
+2. Read Telugu text from uploaded files
+3. Send text to Sarvam AI TTS API
+4. Generate audio output
+5. Store generated audio files
+
+Folder structure:
+
+uploads/texts/
+outputs/audio/
+
+API Endpoints:
+
+POST /texts/upload
+Upload a text file.
+
+GET /texts
+List uploaded text files.
+
+POST /audio/generate
+Generate audio from a text file.
+
+GET /audio
+List generated audio files.
+
+GET /audio/{filename}
+Download audio file.
+
+Each endpoint must include:
+
+- request schema
+- response schema
+- validation
+- error handling
+
+Do NOT generate any frontend yet.
+
+=====================================================
+PHASE 2 — CLI Client Generation
+=====================================================
+
+Generate a CLI client using Typer that interacts with the backend.
+
+CLI commands:
+
+upload-text
+Upload a text file.
+
+list-texts
+List uploaded text files.
+
+generate-audio
+Generate audio for a text file.
+
+list-audio
+List generated audio files.
+
+download-audio
+Download generated audio.
+
+=====================================================
+PHASE 3 — CLI Testing (Mandatory)
+=====================================================
+
+Use the CLI client to test every endpoint.
+
+Test cases must include:
+
+Happy Path Tests
+
+✓ Upload text file  
+✓ Generate audio  
+✓ List audio files  
+✓ Download audio  
+
+Error Case Tests
+
+✓ Upload invalid file  
+✓ Generate audio for missing text  
+✓ Invalid API request  
+
+The CLI should output:
+
+PASS / FAIL for every test.
+
+Example:
+
+PASS - upload text file
+PASS - generate audio
+PASS - list audio
+FAIL - invalid file upload
+
+=====================================================
+PHASE 4 — Backend Validation
+=====================================================
+
+Before continuing verify:
+
+- All endpoints respond correctly
+- Audio generation works
+- Sarvam API integration works
+- Error handling works
+- Files are saved correctly
+
+Fix any backend issues before proceeding.
+
+=====================================================
+PHASE 5 — Documentation
+=====================================================
+
+Generate README.md including:
+
+1. Project description
+2. Setup instructions
+3. CLI usage examples
+4. API documentation
+
+Add two examples in README:
+
+Telugu story text
+Generated audio
+
+Use GitHub playable audio format:
+
+<audio controls>
+  <source src="audio/story1.mp3" type="audio/mpeg">
+</audio>
+
+=====================================================
+OUTPUT STRUCTURE
+
+1. Backend code
+2. CLI client
+3. CLI test results
+4. README documentation understand my project and give your explanation and planning in README.md file
